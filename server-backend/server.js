@@ -60,6 +60,6 @@ app.use(errorHandler);
 
 connectDB();
 
-app.listen(PORT, () => {
-  console.log(`ClearGive server running on http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`ClearGive server running on port ${PORT}`);
 });
